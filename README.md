@@ -2,6 +2,10 @@
 
 Enhance the visual appeal of your WordPress login page with the Simple Login Page Styler plugin. This lightweight and customizable plugin empower users to personalize their login experience effortlessly.
 
+## Tutorial Video:
+
+📹 **Watch the Tutorial on YouTube:** https://youtu.be/g6RnY-9CWJg
+
 ## Features:
 
 - **Logo Upload:** Easily upload your custom logo to replace the default WordPress logo on the login page.

@@ -4,10 +4,10 @@ Contributors: illiaonline
 Tags: branding, custom login, login, login page, White Label
 Requires at least: 6.0
 Tested up to: 6.4.3
-Stable tag: trunk
+Stable tag: 1.0
 License: GPLv2 or later
 
-Enhance the visual appeal of your WordPress login page with the Simple Login Page Styler plugin. This lightweight and customizable plugin empower users to personalize their login experience effortlessly.
+This lightweight and customizable plugin empower you to personalize user login experience and enhance visual appeal of your WordPress login page.
 
 == Description ==
 

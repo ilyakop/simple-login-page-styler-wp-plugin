@@ -10,9 +10,12 @@
  * License: GPLv2 or later
  */
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 class Simple_Login_Page_Styler
 {
-
     const DEFAULT_OPTIONS = array(
         'logo_upload'   => '',
         'bg_color'      => '',
@@ -30,8 +33,8 @@ class Simple_Login_Page_Styler
     public function add_plugin_page()
     {
         add_options_page(
-            'Simple Login Page Styler',
-            'Login Page Styler',
+            __('Simple Login Page Styler', 'simple-login-page-styler'),
+            __('Login Page Styler', 'simple-login-page-styler'),
             'manage_options',
             'slps-settings',
             array($this, 'create_admin_page')
@@ -42,7 +45,7 @@ class Simple_Login_Page_Styler
     {
 ?>
         <div class="wrap">
-            <h2>Simple Login Page Styler Settings</h2>
+            <h2><?php _e('Simple Login Page Styler Settings', 'simple-login-page-styler'); ?></h2>
             <form method="post" action="options.php">
                 <?php
                 settings_fields('slps_option_group');
@@ -64,14 +67,14 @@ class Simple_Login_Page_Styler
 
         add_settings_section(
             'slps_setting_section',
-            'Customize Login Page',
+            __('Customize Login Page', 'simple-login-page-styler'),
             array($this, 'print_section_info'),
             'slps-settings'
         );
 
         add_settings_field(
             'logo_upload',
-            'Upload Logo',
+            __('Upload Logo', 'simple-login-page-styler'),
             array($this, 'logo_upload_callback'),
             'slps-settings',
             'slps_setting_section'
@@ -79,7 +82,7 @@ class Simple_Login_Page_Styler
 
         add_settings_field(
             'bg_color',
-            'Background Color',
+            __('Background Color', 'simple-login-page-styler'),
             array($this, 'bg_color_callback'),
             'slps-settings',
             'slps_setting_section'
@@ -87,7 +90,7 @@ class Simple_Login_Page_Styler
 
         add_settings_field(
             'rounded_form',
-            'Rounded Form',
+            __('Rounded Form', 'simple-login-page-styler'),
             array($this, 'rounded_form_callback'),
             'slps-settings',
             'slps_setting_section'
@@ -108,7 +111,7 @@ class Simple_Login_Page_Styler
 
     public function print_section_info()
     {
-        print 'Enter your customization preferences below:';
+        _e('Enter your customization preferences below:', 'simple-login-page-styler');
     }
 
     public function logo_upload_callback()
@@ -116,8 +119,8 @@ class Simple_Login_Page_Styler
         $options = get_option('slps_options', self::DEFAULT_OPTIONS);
     ?>
         <input type="text" name="slps_options[logo_upload]" id="logo_upload" value="<?php echo esc_attr($options['logo_upload']); ?>" />
-        <input type="button" class="button button-secondary" id="upload_logo_button" value="Upload Logo" />
-        <p class="description">Upload your logo for the login page.</p>
+        <input type="button" class="button button-secondary" id="upload_logo_button" value="<?php _e('Upload Logo', 'simple-login-page-styler'); ?>" />
+        <p class="description"><?php _e('Upload your logo for the login page.', 'simple-login-page-styler'); ?></p>
         <script>
             jQuery(document).ready(function($) {
                 $('#upload_logo_button').click(function() {
@@ -127,9 +130,9 @@ class Simple_Login_Page_Styler
                         return;
                     }
                     mediaUploader = wp.media.frames.file_frame = wp.media({
-                        title: 'Choose Logo',
+                        title: '<?php _e('Choose Logo', 'simple-login-page-styler'); ?>',
                         button: {
-                            text: 'Choose Logo'
+                            text: '<?php _e('Choose Logo', 'simple-login-page-styler'); ?>'
                         },
                         multiple: false
                     });
@@ -149,7 +152,7 @@ class Simple_Login_Page_Styler
         $options = get_option('slps_options', self::DEFAULT_OPTIONS);
     ?>
         <input type="text" name="slps_options[bg_color]" id="bg_color" value="<?php echo esc_attr($options['bg_color']); ?>" class="color-picker" />
-        <p class="description">Choose the background color for the login page.</p>
+        <p class="description"><?php _e('Choose the background color for the login page.', 'simple-login-page-styler'); ?></p>
         <script>
             jQuery(document).ready(function($) {
                 $('.color-picker').wpColorPicker();
@@ -164,9 +167,9 @@ class Simple_Login_Page_Styler
     ?>
         <label for="rounded_form">
             <input type="checkbox" id="rounded_form" name="slps_options[rounded_form]" <?php checked($options['rounded_form']); ?> />
-            Enable Rounded Form
+            <?php _e('Enable Rounded Form', 'simple-login-page-styler'); ?>
         </label>
-        <p class="description">Check this box to enable a 1em border radius for the form and remove border width.</p>
+        <p class="description"><?php _e('Check this box to enable a 1em border radius for the form and remove border width.', 'simple-login-page-styler'); ?></p>
 <?php
     }
 

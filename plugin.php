@@ -10,11 +10,13 @@
  * License: GPLv2 or later
  */
 
+namespace Simple_Login_Page_Styler;
+
 if (!defined('ABSPATH')) {
     exit;
 }
 
-class Simple_Login_Page_Styler
+class SLPS_Main
 {
     const DEFAULT_OPTIONS = array(
         'logo_upload'   => '',
@@ -206,4 +208,4 @@ class Simple_Login_Page_Styler
 }
 
 // Instantiate the class
-$simple_login_page_styler = new Simple_Login_Page_Styler();
+$slps_main_instance = new SLPS_Main();

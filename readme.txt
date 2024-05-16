@@ -26,9 +26,8 @@ This lightweight and customizable plugin empower you to personalize user login e
 
 == Screenshots ==
 
-1. Widget in the dashboard.
-2. Simple Widget on your website.
-3. Widget with posts on your website.
+1. Settings Page
+2. Styled WordPress Login Page
 
 == Changelog ==
 

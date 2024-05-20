@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Simple Login Page Styler
- * Plugin URI: http://plugins.topdevs.net/simple-like-page-plugin
+ * Plugin URI: https://wordpress.org/plugins/simple-login-page-styler/
  * Description: Customize the login page of your WordPress site with logo, background color, and rounded form option.
  * Version: 1.0
  * Author: Illia Kopturov

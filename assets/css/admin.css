@@ -1,0 +1,99 @@
+/* ---------------------------------------------------------------
+   Page header
+--------------------------------------------------------------- */
+.slps-admin-page h1 {
+	border-bottom: 1px solid #dcdcde;
+	margin-bottom: 16px;
+	padding-bottom: 12px;
+}
+
+/* ---------------------------------------------------------------
+   Section cards  (mirrors Simple Like Page sfp-settings-section)
+--------------------------------------------------------------- */
+.slps-settings-section {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 16px 18px;
+	margin: 0 0 16px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+	max-width: 900px;
+}
+
+.slps-settings-section .form-table {
+	margin-top: 10px;
+}
+
+.slps-settings-section .form-table th {
+	padding-top: 16px;
+}
+
+.slps-settings-section .form-table td {
+	padding-top: 13px;
+}
+
+/* ---------------------------------------------------------------
+   Section titles
+--------------------------------------------------------------- */
+.slps-section-title {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0 0 8px;
+	font-size: 15px;
+}
+
+.slps-section-title .dashicons {
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+	color: #2271b1;
+}
+
+/* ---------------------------------------------------------------
+   Media uploader fields
+--------------------------------------------------------------- */
+.slps-image-preview {
+	display: block;
+	max-height: 60px;
+	max-width: 200px;
+	margin-top: 6px;
+	border: 1px solid #dcdcde;
+	border-radius: 2px;
+}
+
+.slps-remove-link {
+	margin-left: 8px;
+	color: #b32d2e;
+	text-decoration: none;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+.slps-remove-link:hover {
+	color: #b32d2e;
+	text-decoration: underline;
+}
+
+/* ---------------------------------------------------------------
+   Reset button row
+--------------------------------------------------------------- */
+.slps-reset-form {
+	margin-bottom: 24px;
+}
+
+/* ---------------------------------------------------------------
+   UnclutterWP promo card
+--------------------------------------------------------------- */
+.slps-promo-card {
+	background: #f0f6fc;
+	border: 1px solid #c3dcf5;
+	border-radius: 4px;
+	padding: 16px 20px;
+	max-width: 600px;
+}
+
+.slps-promo-card p {
+	margin: 8px 0 12px;
+	color: #2c3338;
+}
